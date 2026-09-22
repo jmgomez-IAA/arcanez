@@ -1,0 +1,6 @@
+{
+  "name": "Arcanez - Refugio y Círculo de Gabriel",
+  "description": "Refugio místico internacional para conversar con Gabriel, compartir vivencias, lecturas de tarot y conexión intuitiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

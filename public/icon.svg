@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1838" />
+      <stop offset="60%" stop-color="#0f0c1d" />
+      <stop offset="100%" stop-color="#07050f" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae084" />
+      <stop offset="35%" stop-color="#d4af37" />
+      <stop offset="70%" stop-color="#aa820a" />
+      <stop offset="100%" stop-color="#fdf1a9" />
+    </linearGradient>
+    <linearGradient id="violetGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Medallion -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGlow)" />
+
+  <!-- Outer Astral Ring -->
+  <circle cx="256" cy="256" r="215" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4 8" opacity="0.6" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.85" />
+  <circle cx="256" cy="256" r="185" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.5" />
+
+  <!-- Mystical Radial Constellations / Nodes -->
+  <circle cx="256" cy="41" r="5" fill="#fdf1a9" />
+  <circle cx="256" cy="471" r="5" fill="#fdf1a9" />
+  <circle cx="41" cy="256" r="5" fill="#fdf1a9" />
+  <circle cx="471" cy="256" r="5" fill="#fdf1a9" />
+  <circle cx="104" cy="104" r="3.5" fill="#d4af37" />
+  <circle cx="408" cy="104" r="3.5" fill="#d4af37" />
+  <circle cx="104" cy="408" r="3.5" fill="#d4af37" />
+  <circle cx="408" cy="408" r="3.5" fill="#d4af37" />
+
+  <!-- 8-Pointed Star of Intuition -->
+  <g stroke="url(#goldGrad)" stroke-width="2.5" fill="none" opacity="0.9">
+    <!-- Diamond 1 -->
+    <polygon points="256,90 286,226 422,256 286,286 256,422 226,286 90,256 226,226" />
+    <!-- Diagonal Diamond 2 -->
+    <polygon points="256,135 277,235 377,256 277,277 256,377 235,277 135,256 235,235" stroke-dasharray="2 4" stroke-width="1.5" />
+  </g>
+
+  <!-- Central Halo Aura -->
+  <circle cx="256" cy="256" r="70" fill="url(#violetGlow)" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="70" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+
+  <!-- Arcanez Glyph: Eye of Intuition & Telekinetic Triangle / "A" -->
+  <path d="M 200,295 L 256,180 L 312,295 Z" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linejoin="round" />
+  <path d="M 218,265 L 294,265" stroke="url(#goldGrad)" stroke-width="3" />
+  
+  <!-- Cosmic Eye Pupil / Floating Telekinetic Core -->
+  <circle cx="256" cy="245" r="9" fill="#fae084" filter="url(#glow)" />
+  <circle cx="256" cy="245" r="4" fill="#0c0a17" />
+
+  <!-- Crescent of Wisdom -->
+  <path d="M 230,325 Q 256,340 282,325" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+</svg>
